@@ -1,0 +1,13 @@
+@import "../../../config-scss/rem-calc.scss";
+@import "../../../config-scss/veriables.scss";
+:host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem-calc(40) 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--white);
+    font-size: rem-calc(40);
+}

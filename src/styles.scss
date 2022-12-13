@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import './config-scss/veriables.scss';
+@import './config-scss/reset.scss';
+@import './config-scss/rem-calc.scss';
+@import './config-scss/btn.scss';
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color);
+}
+
+main{
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: rem-calc(600);
+}

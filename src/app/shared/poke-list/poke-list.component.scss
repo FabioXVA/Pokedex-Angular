@@ -1,0 +1,69 @@
+@import "../../../config-scss/veriables.scss";
+@import "../../../config-scss/rem-calc.scss";
+:host{
+    .listagem{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: rem-calc(10) rem-calc(10);
+        box-sizing: border-box;
+        
+        .pokemon{
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            height: rem-calc(160);
+            align-items: center;
+            padding: rem-calc(20);
+            text-decoration: none;
+            border-radius: rem-calc(10);
+            color: var(--primary-color);
+            background-color: var(--white);
+            justify-content: space-between;
+    
+            &__status{
+                h2{
+                    font-size: rem-calc(22);
+                    font-style: italic;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin: rem-calc(0) rem-calc(10) rem-calc(10);
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+    
+                    li{
+                        span{
+                            display: flex;
+                            font-weight: 700;
+                            align-items: center;
+                            width: rem-calc(60);
+                            justify-content: center;
+                            font-size: rem-calc(10);
+                            text-transform: capitalize;
+                            margin-bottom: rem-calc(5);
+                            border-radius: rem-calc(50);
+                            background-color: var(--grey);
+                            font-family: 'Roboto', sans-serif;
+                            padding: rem-calc(5) rem-calc(10);
+                        }
+                    }
+                }
+            }
+            &__image{
+                width: 120px;
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: url("../../../assets/bg/bg_dots.png") center;
+                background-size: cover;
+    
+                img{
+                    max-width: rem-calc(100);
+                }
+            }
+          
+        }
+    } 
+}
